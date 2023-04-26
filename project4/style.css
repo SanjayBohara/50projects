@@ -15,13 +15,13 @@ body {
     margin: 0;
 }
 
-.Search
+.search
 {
     position: relative;
     height: 50px;
 }
 
-.Search .input
+.search .input
 {
     background-color: #fff;
     border: 0px;
@@ -51,10 +51,10 @@ body {
     outline: none;
 }
 
-.Search.active .input{
+.search.active .input{
     width: 200px;
 }
 
-.Search.active .btn{
+.search.active .btn{
     transform: translateX(198px);
 }
