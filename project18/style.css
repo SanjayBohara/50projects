@@ -1,10 +1,11 @@
-@import url('');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +14,14 @@ body{
     overflow: hidden;
     margin: 0;
     background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w+2100&q=80');
+
     background-position: center center;
     background-size: cover;
     transition: 0.4s ease;
 }
 
 body::before{
-    content: '';
+    content:"";
     position: absolute;
     top: 0;
     left: 0;
@@ -28,8 +30,7 @@ body::before{
     background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
-
-.slider-container{
+.slider-container {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     height: 70vh;
     width: 70vw;
@@ -64,6 +65,7 @@ body::before{
     top: 50%;
     transform: translateY(-50%);
     z-index: 100;
+    cursor: pointer;
 }
 .arrow:focus{
     outline: 0;
@@ -73,4 +75,4 @@ body::before{
 }
 .right-arrow{
     right: calc(15vw - 65px);
-}
+} 
